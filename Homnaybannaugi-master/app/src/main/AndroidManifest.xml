@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rufflez.myapplication"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="26" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="26.0.0-alpha1" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon1"
+        android:label="Hôm nay bạn nấu gì?"
+        android:theme="@style/MyMaterialTheme">
+        <activity
+            android:name="com.example.rufflez.Cookbook.MainActivity"
+            android:label="Hôm nay bạn nấu gì?"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.example.rufflez.Cookbook.SplashScreen"
+            android:theme="@style/MyMaterialTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.rufflez.Cookbook.DetailFoodActivity"
+            android:label=""
+            android:theme="@style/MyMaterialTheme" />
+        <activity android:name="com.example.rufflez.Cookbook.MoreActivity" />
+        <activity
+            android:name="com.example.rufflez.Cookbook.CookToday"
+            android:label="Thực đơn hôm nay"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.example.rufflez.Cookbook.AboutActivity"
+            android:label="About"
+            android:theme="@style/MyMaterialTheme" />
+        <activity android:name="com.example.rufflez.Cookbook.examplerecyclerview.RecyclerViewActivity"
+            android:label="Thực đơn hôm nay"
+            android:theme="@style/MyMaterialTheme"/>
+    </application>
+
+</manifest>
